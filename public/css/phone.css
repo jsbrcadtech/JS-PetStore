@@ -1,0 +1,29 @@
+
+.page-header{
+  width:900px;
+}
+#page-header__promo-content{
+  font-size: 1.2em;
+}
+#page-header__flyer,#page-header__top-right-btn{
+  font-size: 1em;
+}
+.banner-content__image {
+  height: 10.5rem;
+  margin-left: 40%
+}
+
+.text-box {
+  width: 170%;
+}
+
+#page-header__sign-in-btn,#page-header__cart-btn{
+  display: flex;
+  font-size: 1em;
+  padding-right: 5%;
+}
+
+#nav__list{
+  display:block;
+  text-align: center;
+}

@@ -1,0 +1,64 @@
+block variables
+doctype
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width")
+    title #{title} | Pet Store - Justus 2022
+    link(rel="stylesheet", type="text/css", href="/css/styles.css")
+    link(rel="stylesheet" media="screen and (max-width:820px)" href="/css/tablet.css")
+    link(rel="stylesheet" media="screen and (max-width:420px)" href="/css/phone.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous")
+  body
+    div.page-container
+      header.page-header
+        div.page-header__promo-content-wrapper
+          a#page-header__flyer(href="/") Flyer
+            i.fas.fa-book-reader
+          p#page-header__promo-content Free Shipping on orders over $60 in ON and QC.
+          a#page-header__top-right-btn(href="/")  Store Locator
+            i.fas.fa-search-location
+      div.page-header__content
+        div.page-header__logo-link
+          a(href="/")
+            img(src="images/logo.jpg", alt="")
+        div.page-header__search
+          input(type="text"  placeholder="Search for an item").page-header__search-input.text-box
+          a#page-header__search-btn(href="#") Search
+            i.fas.fa-search
+        a#page-header__sign-in-btn(href="#") Sign in
+          i.fas.fa-sign-in-alt
+        a#page-header__cart-btn(href="#") Shopping Cart
+          i.fas.fa-shopping-cart
+    
+      main#page-main
+        h1#page-main__title We're all about pets
+
+        nav.page-main__nav 
+          ul#nav__list 
+            li.nav__links 
+              a(href="/") Home
+            li.nav__links
+              a(href="/") Shop by pet
+            li.nav__links
+              a(href="/") Shop by brand
+            li.nav__links
+              a(href="/sale") Sale
+            li.nav__links
+              a(href="/about") About us
+
+      block layout-content
+      footer#footer
+        ul#footer__social-media-links
+          li.social-media-links__items
+            a(href="/")
+              i.fab.fa-facebook-square
+          li.social-media-links__items
+            a(href="/")
+              i.fab.fa-twitter-square
+          li.social-media-links__items
+            a(href="/")
+              i.fab.fa-linkedin-in
+        p &copy; 2022 JS Pets Privacy Policy Terms & Conditions
